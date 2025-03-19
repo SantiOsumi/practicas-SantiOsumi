@@ -1,0 +1,41 @@
+/*Documento CSS*/
+* {margin: 0;
+    padding: 0px;}
+
+body {background-color: #dbf0f0;
+    font-family: "Montserrat", sans-serif; 
+      font-size: 14pt;}
+
+h1 {text-align: center;
+    font-size: 32px;}
+
+h2 {padding: 8px 0px;}
+
+.cabecera {margin-bottom: 16px;
+           margin-top: 16px;}
+
+.musica {width: 80%;
+         margin: 16px auto;
+         padding-top: 16px;
+         background-color: #292929;}
+
+
+.musica audio {display: block;
+               margin: auto;
+               padding-bottom: 16px;}
+
+.videos {width: 80;
+         min-height: 350px;
+         margin: 16px auto 200px auto;
+         display: flex;
+        text-align: center;}
+
+.videos div {width: 50%;
+             padding: 0px 10px 0px 10px;}
+
+.videos iframe, .videos video {width: 100%;
+                               height: 300px;}
+
+.pie {background-color: #2a80a5;
+      padding: 16px 0px;
+      text-align: center;}

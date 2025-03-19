@@ -1,0 +1,39 @@
+/*Documento CSS*/
+* {margin: 0;
+    padding: 0;}
+
+    body {background-color: #f8f3f3;
+        font-family: "Montserrat", sans-serif; 
+          font-size: 14pt;
+            padding: 54px;}
+h1 {margin-bottom: 16px;}
+
+.bio-info {line-height: 140%;
+           margin: 16px 80px;
+           float: right;
+           padding: 10px 0px;}
+
+.bio-info p {margin-bottom: 16px;}
+
+
+.bio-info img {margin-right: 16px;
+    float: left;
+    width: 15%;
+    height: 15%;}
+
+table {width: 50%;
+  border: 3px solid black;
+  text-align: center;}
+
+td {font-size: 12pt;
+  padding: 32px;}
+
+.fila1 {background-color: #c2c2c2;}
+
+.fila2 {background-color: #ffffff;}
+
+.video {padding-top: 24px;}
+
+.video p {padding-bottom: 12px;}
+
+h2 {margin-bottom: 16px;}

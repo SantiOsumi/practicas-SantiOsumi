@@ -1,0 +1,63 @@
+/*Documento CSS*/
+* {margin: 0; }
+
+body {font-family: "Montserrat", sans-serif; 
+        font-size: 14pt;}
+
+.cabecera {background-color: #313131;
+        padding: 16px 0px;}
+
+header p {margin: 15px 50px 30px;
+        text-align: center;}
+
+        h1 {padding: 4px 0px;
+        text-align: center;
+        font-size: 42px;}
+
+.contenido {padding: 16px 0px;
+        width: 70%;
+        margin: auto;}
+
+.contenido2 {padding: 16px 0px;
+        margin: auto;
+        width: 70%;}
+
+.contenido-texto {display: flex;
+        margin-right: 50px;}
+
+.contenido p {line-height: 140%;
+        padding: 16px 0px;}
+
+.img-cabecera {text-align: center;
+        width:100%;}
+
+.img-contenido {float: left;
+        max-width: 500px;
+        margin-right: 30px;
+        margin-bottom: 12px;}
+
+.img-contenido2 {float: right;
+        max-width: 500px;
+        margin-left: 30px;
+        margin-bottom: 12px;}
+.flotador {padding: 54px 0px;}
+
+.logo {width: 20%;
+        display: block;
+        margin: auto;}
+
+.pie-articulo {padding: 54px 0px;
+        text-align: center;
+        color: #ffffff;
+        background-color: #8e7fff;}
+
+.red-social {display: inline-block;
+        font-size: small;
+        block-size: 60px;
+        box-align: center;
+        margin: 30px 8px 0px;}
+
+.pie {background-color: #313131;
+        color: #ffffff;
+        text-align: center;
+        padding: 16px 0px;}

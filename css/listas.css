@@ -1,0 +1,33 @@
+/*documento css*/
+*{margin: 0;}
+
+body {font-family: "Mulish", serif;}
+
+/*Encabezados*/
+
+h1 {background-color: #c99bf8;
+    text-align: center}
+
+h2 {padding: 8px 0px;
+    color: #8b2020;}
+
+.display {color: #3420b6;}
+
+
+/*LAYOUT*/
+.cabecera {padding: 16px 0px 16px 0px;
+          background-color: #d2b5ee;}
+
+.listas {margin: 16px auto;
+        padding: 16px;
+        width: 70%;
+        background-color: #ffebcd;}
+
+.contenido {width: 70%;
+    margin: 16px auto;}
+
+.contenido p {line-height: 140%;
+            padding: 16px 0px;}
+
+.pie span {background-color: #c99bf8;
+text-align: center;}
