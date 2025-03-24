@@ -1,3 +1,75 @@
 /*Documento CSS*/
-* {margin: 0;
-   padding: 0;}
+* {margin: 0px;
+   padding: 0px;}
+
+body {font-family: "Montserrat", sans-serif;
+      background-color: #f5f5f5;}
+
+h1 {text-align: center;
+    padding: 16px;}
+
+h2 {padding-bottom: 8px;}
+
+.cabecera {min-height: 80px;
+           background-color: #4a85b4;
+           color: #f5f5f5;
+           border-bottom: 2px solid  #4b779b;}
+
+.cuerpo {width: 100%;}
+
+.container p {font-size: 1.3em;
+              padding-bottom: 16px;}
+
+.container {width: 80%;
+            padding-top: 80px;
+            margin: 0px auto;
+            display: flex;}
+
+
+.items {width: 50%;
+        padding: 16px;
+        box-sizing: border-box;}
+
+.items input, textarea {width: 100%;
+              padding: 8px;
+              margin-bottom: 8px;}
+
+textarea {max-width: 100%;
+          min-width: 100%;
+          min-height: 120px;
+          max-height: 120px;}
+
+.items a {display: block;
+          width: 120px;
+          padding: 16px;
+          border-radius: 8px;
+          background-color: #25d366;
+          background: linear-gradient(0deg, rgb(162, 201, 165) 0%, rgb(16, 141, 20) 100%);
+          text-align: center;
+          color: #f5f5f5;
+          text-decoration: none;}
+
+.items a:hover {background-color: #096020;}
+.items a:active {background: rgb(34,193,195);
+   background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(104, 104, 104) 100%);}
+
+#btn {width: 120px;}
+
+.items input::placeholder, textarea::placeholder {color: #8fc594;
+                                                  font-family: "Montserrat", sans-serif;
+                                                  font-size: 9pt;}
+
+.container::before, .container::after {content: " ";
+                    display: block;
+                    width: 60px;
+                    height: 60px;
+                    background: url(../img/send-fill.svg);
+                    background-repeat: no-repeat;
+                    background-size: 100% 100%;
+                    position: relative;
+                    top: -60px;
+                    left: -20px;}
+
+.container::after {position: relative !important;
+                   bottom: 70px !important;
+                   right: 50px !important;}

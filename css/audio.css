@@ -24,14 +24,13 @@ h2 {padding: 8px 0px;}
                margin: auto;
                padding-bottom: 16px;}
 
-.videos {width: 80;
+.videos {width: 100%;
          min-height: 350px;
-         margin: 16px auto 200px auto;
          display: flex;
+         flex-direction: column;
         text-align: center;}
 
-.videos div {width: 50%;
-             padding: 0px 10px 0px 10px;}
+.videos div {width: 100%;}
 
 .videos iframe, .videos video {width: 100%;
                                height: 300px;}
@@ -39,3 +38,17 @@ h2 {padding: 8px 0px;}
 .pie {background-color: #2a80a5;
       padding: 16px 0px;
       text-align: center;}
+
+/*MEDIA QUERIES BREAKPOINT 992px*/
+@media only screen and (min-width: 992px)
+    {.videos {width: 80%;
+              flex-direction: row;
+              flex-wrap: nowrap;
+              margin: 16px auto 200px auto;}
+
+    .videos div {width: 80%;
+                 padding: 0px 10px 0px 10px;}
+
+
+
+    }

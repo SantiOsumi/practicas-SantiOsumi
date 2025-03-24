@@ -1,28 +1,49 @@
 /*Documento CSS*/
 
-body {
-    font-family: "Roboto", sans-serif;}
+body {font-family: "Roboto", sans-serif;}
 
 * {margin: 0px;
    padding: 0px;}
 
-h3 {font-size: 1.4em;
+h3 {font-size: 2.6em;
     color: whitesmoke;
     text-shadow: 2px 2px 2px black;
-    padding-top: 95px;}
+    padding-top: 175px;}
 
-.container {width: 70%;
-            margin: 1px;
-            margin: 32px auto;
-            padding: 16px 16px 16px 0px;
+.container {width: 100%;
+            min-height: 1px;
             display: flex;
+            flex-direction: column;
             justify-content: space-between;
             align-content: flex-start;}
 
-.items {width: 25%;
-        margin-left: 16px;
-        height: 140px;
+.items {width: 100%;
+        height: 450px;
         text-align: center;
-        background-image: url(https://picsum.photos/id/4/400/300); background-size: 100% 100%;}
+        background-image: url(https://picsum.photos/id/4/400/300);
+        background-size: 100% 100%;}
 
-        /* .tres {align-self: flex-end;} /*
+.items:hover {filter: grayscale(60%);}
+
+/* .tres {align-self: flex-end;} /*
+
+/*MEDIA QUERIES BREAKPOINT 600px*/
+
+@media only screen and (min-width:600px) 
+   {.container {flex-direction: row;
+                flex-wrap: wrap;}
+    .items {width: 50%;}}
+
+/*MEDIA QUERIES BREAKPOINT 992px*/
+
+@media only screen and (min-width:992px) 
+   {.container {width: 1110px;
+                margin: 32px auto;
+                flex-wrap: nowrap;}
+
+    .items {width: 25%;
+            margin-left: 16px;
+            height: 140px;}
+
+    h3 {font-size: 1.4em;
+        padding-top: 95px !important;}}
