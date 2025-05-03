@@ -1,0 +1,23 @@
+/*DOCUMENTO CSS*/
+* {margin: 0px;
+   padding:  0px;}
+ 
+body {font-family: "Montserrat", sans-serif;}
+ 
+ h1 {font-family:Arial, Helvetica, sans-serif;
+     text-align: center;}
+   
+.cabecera {margin: 32px;}
+ 
+.tablas {margin-bottom: 32px;
+         min-height: 1px;
+         padding: 16px 0px 16px 0px;
+         background-color: #f4d7ff;}
+ 
+ div.tablas {background-color: #f4d7ff;
+             margin-bottom: 300px;}
+ 
+.tablas table {margin: auto;}
+ 
+.pie {background-color: #f4d7ff;
+      text-align: center;}

@@ -1,0 +1,65 @@
+/*Documento CSS*/
+* {margin: 0;
+   padding: 0;}
+
+   @font-face {font-family: 'Creato Display';
+               src: url('../fonts/CreatoDisplay-Regular.woff2') format('woff2'),
+                    url('../fonts/CreatoDisplay-Regular.woff') format('woff');
+               font-weight: normal;
+               font-style: normal;
+               font-display: swap;}
+
+.cabecera {font-family: 'Creato Display';
+           background: #be61d2;
+           min-height: 1px;
+           width: 100%;}
+
+.bar {min-height: 1px;}
+
+.logo {color: whitesmoke;
+       font-size: 2em;
+       display: block;
+       width: 60px;
+       padding: 8px 0px;
+       margin: auto;}
+
+.menu {display: flex;
+       flex-flow: row wrap;}
+
+.items {width: 50%;
+        text-decoration: none;
+        text-align: center;
+        color: black;
+        background: white;
+        padding: 8px 0px;}
+
+.menu a:first-child {display: none;}
+
+/*BREAKPOINT 600PX*/
+
+@media only screen and (min-width:600px) 
+    {.logo {font-size: 4em;}
+
+     .items {width: 25%;}}
+
+/*BREAKPOINT 992PX*/
+
+@media only screen and (min-width:992px)
+    {.logo {font-size: 3em;}
+
+    .items {width: 20%;}
+
+    .menu {width: 80%;
+           margin: auto;
+           position: relative;
+           top: 15px;
+           border-radius: 16px;
+           box-shadow: 0px 0px 2px black;}
+
+    .menu a:hover {background: #d5d5d5;}
+    .menu a:first-child {display: block;
+                         border-top-left-radius: 16px;
+                         border-bottom-left-radius: 16px;}
+
+    .menu a:last-child {border-top-right-radius: 16px;
+                        border-bottom-right-radius: 16px;}}

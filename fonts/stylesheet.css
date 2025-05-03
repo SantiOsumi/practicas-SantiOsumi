@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Creato Display';
+    src: url('CreatoDisplay-Regular.woff2') format('woff2'),
+        url('CreatoDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

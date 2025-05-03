@@ -1,0 +1,165 @@
+/*Documento CSS*/
+* {margin: 0;
+   padding: 0;
+   box-sizing: border-box;}
+
+   body {font-family: "Montserrat", sans-serif; 
+         font-size: 14pt;
+         background-color: #c7c7c7;}
+
+.capa {position: fixed;
+       width: 100%;
+       height: 100vh;
+       z-index: -1;
+       top: 0;
+       left: 0;}
+
+.encabezado {background: #1c1c1c;
+             width: 100%;
+             height: 100px;
+             padding: 10px;
+             top: 0;
+             left: 0;}
+      
+.container {width: 100%;
+            max-width: 1200px;
+            margin: auto;}
+
+.container .btn-menu {float: left;
+                      line-height: 100px;}
+
+.container .btn-menu label {color: #ffffff;
+                            font-size: 25px;
+                            cursor: pointer;}
+
+.btn-menu {margin-left: -100px;
+           margin-top: -15px;}
+.logo {width: 80px;
+       margin: auto;}
+
+.container .menu {float: right;
+                  line-height: 100px;}
+
+.container .menu a {display: inline-block;
+                    padding: 15px;
+                    line-height: normal;
+                    text-decoration: none;
+                    color: #ffffff;
+                    transition: all .3 ease;
+                    border-bottom: 2px solid transparent;
+                    font-size: 30px;
+                    margin-right: 5px;}
+
+
+.container .menu a:hover {border-bottom: 2px solid #c7c7c7;
+                          padding-bottom: 5px;}
+
+.container-menu {background: #c7c7c7(165, 123, 203);
+                 position: absolute;
+                 width: 200px;
+                 height: 100vh;
+                 top: 0;
+                 left: 0;   
+                 opacity: 0;
+                 visibility: hidden;
+                 transition: all .3s ease;}
+
+.cont-menu {width: 100%;
+            max-width: 250px;
+            background: #1c1c1c;
+            height: 100vh;
+            position: relative;
+            transition: all 500ms ease;
+            transform: translateX(-100%);}
+
+            
+.contenido-cv {display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+     padding: 24px 60px;}
+
+.item p {padding: 10px 60px 20px 0px;
+         line-height: 20pt;}
+
+.contenido-cv h2, p {margin: 0px 0px 0px 0px;}
+
+h1 {text-align: center;
+    padding: 30px 0px;}
+
+.contenido-cv img {float: left;
+       width: 320px;
+                   padding: 24px 60px;}
+
+#btn-menu {display: none;}
+
+#btn-menu:checked ~ .container-menu {opacity: 1;
+                                     visibility: visible;}
+
+#btn-menu:checked ~ .container-menu .cont-menu {transform: translateX(0%);}
+
+.cont-menu nav {transform: translateY(15%);}
+
+.cont-menu nav a {display: block;
+                  text-decoration: none;
+                  padding: 20px;
+                  color: #c7c7c7;
+                  border-left: 5px solid transparent;
+                  transition: all 400ms ease;}
+
+.cont-menu nav a:hover {border-left: 5px solid #c7c7c7;
+                        background: #1f1f1f;}
+
+.cont-menu label {position: absolute;
+                  margin: 30px 40px;
+                  top: 0;
+                  color: #ffffff;
+                  cursor: pointer;
+                  font-size: 25px;}
+
+.pie input, textarea {width: 40%;
+              padding: 8px;
+              margin-bottom: 20px;}
+
+.pie {display: inline-block;
+       background-color: #1c1c1c;
+      width: 100%;
+      color: #ffffff;
+      padding: 16px 0px;
+      text-align: center;}
+
+.red-social {display: inline-block;
+             font-size: small;
+             block-size: 60px;
+             box-align: center;
+             margin: 30px 8px 20px;}
+
+.email p {padding: 20px;}
+
+/*MEDIA QUERIES BREAKPOINT 600px*/
+
+@media only screen and (min-width:600px)
+{.cont-menu label {margin: 34px 40px;
+                   font-size: 25px;}
+ .btn-menu {margin-left: 30px;
+       margin-top: -10px;}
+ .contenido-cv img {width: 480px;}
+ .cont-menu, .container-menu, .capa {height: 368vh;}}
+
+/*MEDIA QUERIES BREAKPOINT 992px*/
+
+@media only screen and (min-width:992px)
+{.contenido-cv img {width: 420px;
+                    padding-bottom: 150px}
+ .cont-menu, .container-menu, .capa {height: 280vh;}}
+
+ /*MEDIA QUERIES BREAKPOINT 1400px*/
+
+@media only screen and (min-width:1400px)
+{* {font-size: 30px;
+    line-height: 140%;}
+ .contenido-cv {padding: 20px 200px;}
+ .btn-menu {margin-left: -586px;}
+ .cont-menu label {margin: 34px 90px;}
+ .cont-menu, .container-menu, .capa {height: 140vh;
+                                     width: 300px;}
+ .contenido-cv img {padding-bottom: 80px;}}
